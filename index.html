@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Sparkle To-Do List ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://emojicdn.elk.sh/🌸" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <h2>My Sparkle List <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="pink-heart" class="title-icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="✨ Add a new task..." aria-label="Task input">
+                <button onclick="addTask()" aria-label="Add task">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            <div class="task-controls">
+                <span id="task-counter">0 tasks</span>
+                <button id="clear-completed">Clear Completed</button>
+            </div>
+            <ul id="list-container">
+                <!-- Tasks will appear here dynamically -->
+            </ul>
+            <div class="motivational-quote">
+                <p>🌸 You're doing amazing, sweetie! ✨</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
